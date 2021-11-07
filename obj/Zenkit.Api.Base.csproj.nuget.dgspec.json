@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\WendelinN\\OneDrive - PlanB. GmbH\\source\\repos\\dsdev\\Zenkit.Base.Api\\Zenkit.Base.Api.csproj": {}
+    "C:\\Users\\WendelinN\\OneDrive - PlanB. GmbH\\source\\repos\\dsdev\\Zenkit.Api\\Zenkit.Api.Base.csproj": {}
   },
   "projects": {
-    "c:\\Users\\WendelinN\\OneDrive - PlanB. GmbH\\source\\repos\\dsdev\\Zenkit.Base.Api\\Zenkit.Base.Api.csproj": {
+    "C:\\Users\\WendelinN\\OneDrive - PlanB. GmbH\\source\\repos\\dsdev\\Zenkit.Api\\Zenkit.Api.Base.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\WendelinN\\OneDrive - PlanB. GmbH\\source\\repos\\dsdev\\Zenkit.Base.Api\\Zenkit.Base.Api.csproj",
-        "projectName": "Zenkit.Base.Api",
-        "projectPath": "c:\\Users\\WendelinN\\OneDrive - PlanB. GmbH\\source\\repos\\dsdev\\Zenkit.Base.Api\\Zenkit.Base.Api.csproj",
+        "projectUniqueName": "C:\\Users\\WendelinN\\OneDrive - PlanB. GmbH\\source\\repos\\dsdev\\Zenkit.Api\\Zenkit.Api.Base.csproj",
+        "projectName": "Zenkit.Api.Base",
+        "projectPath": "C:\\Users\\WendelinN\\OneDrive - PlanB. GmbH\\source\\repos\\dsdev\\Zenkit.Api\\Zenkit.Api.Base.csproj",
         "packagesPath": "C:\\Users\\WendelinN\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\WendelinN\\OneDrive - PlanB. GmbH\\source\\repos\\dsdev\\Zenkit.Base.Api\\obj\\",
+        "outputPath": "C:\\Users\\WendelinN\\OneDrive - PlanB. GmbH\\source\\repos\\dsdev\\Zenkit.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -27,6 +27,7 @@
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

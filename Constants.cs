@@ -1,4 +1,4 @@
-namespace Zenkit.Api.Base
+namespace Zenkit.Base.Api
 {
     public class Constants
     {

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Zenkit.Api.Base.Models
+namespace Zenkit.Base.Api.Models
 {
     public class Checklist
     {

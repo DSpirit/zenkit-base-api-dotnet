@@ -2,7 +2,7 @@ using System;
 using System.ComponentModel;
 using System.Text.Json.Serialization;
 
-namespace Zenkit.Api.Base.Models
+namespace Zenkit.Base.Api.Models
 {
 
     [Serializable]

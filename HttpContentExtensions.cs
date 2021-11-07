@@ -2,7 +2,7 @@ using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace Zenkit.Api.Base
+namespace Zenkit.Base.Api
 {
     public static class Settings
     {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xWYbk7Oxd9q1w65s6dWFyBXRh0/+2coomGUZ/lyfyBvXmQImk/WsJ/shwVCOMjV5pCP/9PBDV8ZpfrtpSWYpqA==",
+  "dgSpecHash": "OgVGmxZjqpnSSuVHwZH5uhfIMW+iYfNu8Egk+A0LNpKFvWWCO89iByMDGR4qaaaNNZrMZE2oqCPsj+26qKii8w==",
   "success": true,
-  "projectFilePath": "c:\\Users\\WendelinN\\OneDrive - PlanB. GmbH\\source\\repos\\dsdev\\Zenkit.Api.Base\\Zenkit.Api.Base.csproj",
+  "projectFilePath": "C:\\Users\\WendelinN\\OneDrive - PlanB. GmbH\\source\\repos\\dsdev\\Zenkit.Api\\Zenkit.Api.Base.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\WendelinN\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1\\microsoft.netcore.platforms.1.1.1.nupkg.sha512",
     "C:\\Users\\WendelinN\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

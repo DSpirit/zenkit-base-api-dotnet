@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
-using Zenkit.Api.Base.Models;
+using Zenkit.Base.Api.Models;
 
-namespace Zenkit.Api.Base
+namespace Zenkit.Base.Api
 {
     public class ZenkitClient : IDisposable
     {
@@ -46,7 +46,7 @@ namespace Zenkit.Api.Base
         {
             bool hasMoreResults = false;
             int skip = 0;
-            FilterResponse zenkitResponse = new FilterResponse();
+            FilterResponse filterResponse = new FilterResponse();
             do
             {
                 filter.Skip = skip;
@@ -55,16 +55,16 @@ namespace Zenkit.Api.Base
 
                 var response = await this.client.SendAsync(request);
                 var results = await response.Content.ReadAsJsonAsync<FilterResponse>();
-                zenkitResponse.CountData = results.CountData;
-                zenkitResponse.CountDataPerGroup = results.CountDataPerGroup;
+                filterResponse.CountData = results.CountData;
+                filterResponse.CountDataPerGroup = results.CountDataPerGroup;
 
-                if (zenkitResponse.ListEntries == null)
+                if (filterResponse.ListEntries == null)
                 {
-                    zenkitResponse.ListEntries = results.ListEntries;
+                    filterResponse.ListEntries = results.ListEntries;
                 }
                 else
                 {
-                    zenkitResponse.ListEntries.AddRange(results.ListEntries);
+                    filterResponse.ListEntries.AddRange(results.ListEntries);
                 }
 
                 hasMoreResults = results.ListEntries.Count > 0;
@@ -72,7 +72,7 @@ namespace Zenkit.Api.Base
             }
             while (hasMoreResults);
 
-            return zenkitResponse;
+            return filterResponse;
         }
         #endregion
 
