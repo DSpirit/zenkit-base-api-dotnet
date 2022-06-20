@@ -20,7 +20,7 @@ namespace Zenkit.Base.Api
             client.DefaultRequestHeaders.Add(Constants.ZenkitApiKeyHeader, apiKey);
         }
 
-        #region Elements
+        #region Elementcategories
         public async Task<List<ElementCategory>> GetElementCategoriesAsync()
         {
             var requestMessage = new HttpRequestMessage(HttpMethod.Get, $"{ZenkitBaseHost}/api/{ZenkitApiVersion}/elementcategories");
@@ -28,7 +28,9 @@ namespace Zenkit.Base.Api
 
             return await response.Content.ReadAsJsonAsync<List<ElementCategory>>();
         }
+        #endregion
 
+        #region Elements
         public async Task<List<Element>> GetElementsInCollectionAsync(
             string listAllId)
         {
@@ -76,6 +78,46 @@ namespace Zenkit.Base.Api
         }
         #endregion
 
+        #region Lists
+        public async Task<Collection> GetCollectionAsync(
+            string listShortId)
+        {
+            var request = new HttpRequestMessage(HttpMethod.Get, $"{ZenkitBaseHost}/api/{ZenkitApiVersion}/lists/{listShortId}");
+            var response = await this.client.SendAsync(request);
+
+            return await response.Content.ReadAsJsonAsync<Collection>();
+        }
+        #endregion
+
+        #region Users
+        public async Task<User> GetCurrentUser()
+        {
+            var request = new HttpRequestMessage(HttpMethod.Get, $"{ZenkitBaseHost}/api/{ZenkitApiVersion}/users/me");
+            var response = await this.client.SendAsync(request);
+
+            return await response.Content.ReadAsJsonAsync<User>();
+        }
+        #endregion
+
+        #region Workspaces
+        public async Task<Workspace> GetWorkspaceAsync(
+            string workspaceAllId,
+            Filter filter)
+        {
+            var request = new HttpRequestMessage(HttpMethod.Get, $"{ZenkitBaseHost}/api/{ZenkitApiVersion}/workspaces/{workspaceAllId}");
+            var response = await this.client.SendAsync(request);
+
+            return await response.Content.ReadAsJsonAsync<Workspace>();
+        }
+
+        public async Task<Workspace> GetWorkspacesAndListsAsync()
+        {
+            var request = new HttpRequestMessage(HttpMethod.Get, $"{ZenkitBaseHost}/api/{ZenkitApiVersion}/workspacesWithLists");
+            var response = await this.client.SendAsync(request);
+
+            return await response.Content.ReadAsJsonAsync<Workspace>();
+        }
+        #endregion
 
         public void Dispose()
         {

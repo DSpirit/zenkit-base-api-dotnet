@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace Zenkit.Base.Api
 {
-    public static class Settings
+    public static class HttpContentExtensions
     {
         public static JsonSerializerOptions jsonSerializerOptions = new JsonSerializerOptions {
             WriteIndented = true,

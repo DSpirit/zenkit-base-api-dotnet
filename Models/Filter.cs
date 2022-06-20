@@ -22,19 +22,19 @@ namespace Zenkit.Base.Api.Models
     public class FilterExpression
     {
         [JsonPropertyName("AND")]
-        public AND And { get; set; }
+        public And And { get; set; }
 
         [JsonPropertyName("OR")]
-        public OR Or { get; set; }
+        public Or Or { get; set; }
     }
 
-    public class AND
+    public class And
     {
         [JsonPropertyName("TERMS")]
         public List<Term> Terms { get; set; }
     }
 
-    public class OR
+    public class Or
     {
         [JsonPropertyName("TERMS")]
         public List<Term> Terms { get; set; }
@@ -65,6 +65,9 @@ namespace Zenkit.Base.Api.Models
 
         [JsonPropertyName("dateTo")]
         public DateTime? DateTo { get; set; }
+
+        [JsonPropertyName("text")]
+        public string Text { get; set; }
 
         [JsonPropertyName("checked")]
         public bool? Checked { get; set; }
